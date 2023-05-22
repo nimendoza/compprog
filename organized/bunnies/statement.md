@@ -1,28 +1,31 @@
-# Bunny
+# Bunnies
 
-Alice has a pet bunny, named Bob. She's been taking $k$ pictures of him each day, ever since she got him $d$ days ago. After some time, the photos piled up! Now that she's bought a photo album with $p$ pages, she wants to know how many _additional_ pages she needs to buy given that a page (back-to-back) could store $l$ pictures.
+Alice has a pet bunny, named Bob. One day, Bob went missing!
 
-Alice is on a tight budget, so she'd prefer if you minimize this number. Could you please help her out?
+Alice, before searching far and wide, internalizes the fact that *she is a powerful witch, who can cast powerful spells*. After a wave of her wand, Bob's memory fresh in her mind, she summons a bunny! ... or two? Being the bunny-lover that she is, she would rather keep both the bunnies. Of course, she wants to differentiate between the two. 
 
-For motivation, below is a picture of Alice taking a picture of Bob.
+Conveniently, she knows that Bob gnaws on carrots in a very specific way—just like how she eats the sandwich crust first before digging into its good bits. Given a string $s$ of length $2n$, with each half representing the bunny's chewing pattern on the carrot, kindly find the half that matches exactly to what Alice remembers.
 
 <p align="center">
   <img src="image.png" />
 </p>
 
+Note: Being the powerful witch that she is, Alice guarantees that Bob is either of the bunnies. In other words, given the string $t$ that Bob would chew a carrot, $t$ would be a substring of $s$. Oh, and, Alice will name the other bunny Ben.
+
 ## Input
 
-The first line of input contains $k$ and $d$, separated by a space.
+The first line of input contains $n$.
 
-The following line contains $p$ and $l$, separated by a space as well.
+The second line of input is the string $s$ of length $2n$.
+
+The third line of input is the string $t$ of length $n$.
 
 ### Constraints
 
-${1\leq k, d, p\leq 1000}$
+${1\leq n\leq 100}$
 
-${1\leq l \leq 10}$
+$s$ and $t$ consist of lowercase English characters.
 
 ## Output
 
-Output a single line, representing the additional number of pages Alice needs to buy to properly store her pictures of Bob in her photo album.
-
+Output a single line, stating `LEFT` or `RIGHT`. This should correspond to the half that reflects Bob's chewing pattern.
